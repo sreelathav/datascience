@@ -1,5 +1,5 @@
-# Sree Latha Vallabhaneni           Student_Id: 15205032
-#project under Strand 1: Statistical modelling/machine Learning
+# Sree Latha Vallabhaneni           
+#project under Statistical modelling/machine Learning
 # Analysis of data, downloaded from kaggle website 
 #https://www.kaggle.com/zcbmxvnyico/d/uciml/breast-cancer-wisconsin-data
 
