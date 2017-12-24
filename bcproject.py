@@ -23,7 +23,7 @@ from sklearn.svm import SVC,LinearSVC
 from sklearn.gaussian_process.kernels import RBF
 
 #Load data. 
-data = pd.read_csv('Documents/dataProgPython/input/breastCancerW.csv')
+data = pd.read_csv('breastCancerW.csv')
 data.head(10)
 type(data)
 #data cleaning, arrange or transform data variables  
@@ -79,7 +79,7 @@ dcut3.corr(method='pearson', min_periods=1)
 plt.rcParams['figure.figsize']=(15,12)
 sbn.boxplot(dcut1)
 plt.show()
-plt.savefig('Documents/dataProgPython/output/boxCut1.png')
+plt.savefig('output/boxCut1.png')
 plt.clf()
 #log transform might bring down the difference in distribution
 #log transform cut1  (_mean data) and see
@@ -93,14 +93,14 @@ log_dcut1[cut1_columns] = log_dcut1[cut1_columns].apply(np.log10)
 plt.rcParams['figure.figsize']=(15,12)
 sbn.boxplot(log_dcut1)
 plt.show()
-plt.savefig('Documents/dataProgPython/output/boxLogCut1.png')
+plt.savefig('output/boxLogCut1.png')
 plt.clf()
 #
 #plot  predictor variables with _se
 plt.rcParams['figure.figsize']=(15,12)
 sbn.boxplot(dcut2)
 plt.show()
-plt.savefig('Documents/dataProgPython/output/boxCut2.png')
+plt.savefig('output/boxCut2.png')
 plt.clf()
 # log transform dcut2 variables
 cut2_columns = ['radius_se', 'texture_se', 'perimeter_se', 
@@ -121,7 +121,7 @@ plt.clf()
 plt.rcParams['figure.figsize']=(15,12)
 sbn.boxplot(dcut3)
 plt.show()
-plt.savefig('Documents/dataProgPython/output/boxCut3.png')
+plt.savefig('output/boxCut3.png')
 
 # log transform dcut3 variables
 cut3_columns = [ 'radius_worst','texture_worst', 'perimeter_worst', 
@@ -135,7 +135,7 @@ plt.clf()
 plt.rcParams['figure.figsize']=(15,12)
 sbn.boxplot(log_dcut3)
 plt.show()
-plt.savefig('Documents/dataProgPython/output/boxLogCut3.png')
+plt.savefig('output/boxLogCut3.png')
 
 
 ####Using grid search to tune for optimal parameters for the classifiers
@@ -268,5 +268,5 @@ ax2.set_title('SVM classification')
 ax2.plot(roc_svm[0],roc_svm[1],label=' (AUC = {0:0.2f})'.format(svm_auc))         
 ax2.legend(loc='lower right')
 plt.show()
-plt.savefig('Documents/dataProgPython/output/rocKS.png')
+plt.savefig('output/rocKS.png')
 #========================================================
