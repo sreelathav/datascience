@@ -1,4 +1,4 @@
-# Sree Latha Vallabhaneni           Student_Id: 15205032
+# Sree Latha Vallabhaneni      
 #project under Strand 1: Statistical modelling/machine Learning
 # Analysis of movie_metadata.csv  data, downloaded from kaggle website 
 #https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset/
